@@ -368,7 +368,7 @@ if (isCreator) return reply(bvl)
 			        }
 			    })
 			Maria.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-Maria.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} Has been kicked because of sending link in this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
+Maria.sendMessage(from, {text:`\`\`\`「 Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]} Has been kicked because of sending link on this group`, contextInfo:{mentionedJid:[m.sender]}}, {quoted:m})
 } else {
 }
 	    //total features by xeon sir
@@ -796,7 +796,7 @@ break;
                         contextInfo: {
                             externalAdReply: {
                                 showAdAttribution: true,
-                                title: ' *🎐Maria Broadcast🎐* ',
+                                title: ' *🎐 Eksubot Broadcast🎐* ',
                                 body: `Sent ${i.length} Group`,
                                 thumbnailUrl: 'https://telegra.ph/file/3fd18ee11521117c7c882.jpg',
                                 sourceUrl: global.link,
@@ -1058,7 +1058,7 @@ case 'tag': case 'tagall': case 'all':{
           let response = await Maria.groupInviteCode(m.chat);
           Maria.sendText(
             m.sender,
-            ` 🤖𝐵𝑜𝑡 𝑛𝑎𝑚𝑒:- Maria Bot\n\n🔖𝐺𝑟𝑜𝑢𝑝 𝑛𝑎𝑚𝑒:- ${groupMetadata.subject}\n\n🔰𝐺𝑟𝑜𝑢𝑝 𝑙𝑖𝑛𝑘:- https://chat.whatsapp.com/${response}`,
+            ` 🤖𝐵𝑜𝑡 𝑛𝑎𝑚𝑒:- EksubotBot\n\n🔖𝐺𝑟𝑜𝑢𝑝 𝑛𝑎𝑚𝑒:- ${groupMetadata.subject}\n\n🔰𝐺𝑟𝑜𝑢𝑝 𝑙𝑖𝑛𝑘:- https://chat.whatsapp.com/${response}`,
             m,
             { detectLink: true }
           );
@@ -1949,7 +1949,7 @@ break;
                          
                            
   case 'menu': case 'help': case 'h': 
-      const txt = `╭─「 *Konichiwa* 」
+      const txt = `╭─「 *Eksubot* 」
 │⋊ 𝕌𝕤𝕖𝕣: ${pushname} 
 │⋊ 𝔹𝕠𝕥:  ${botname}
 │⋊ ℙ𝕣𝕖𝕗𝕚𝕩:  *${prefix}*
@@ -1961,9 +1961,9 @@ break;
 │⋊ ℙ𝕝𝕒𝕥𝕗𝕠𝕣𝕞: ${os.platform()} 
 │⋊ ℝ𝕦𝕟𝕥𝕚𝕞𝕖: ${runtime(process.uptime())}
 │⋊ 𝕋𝕠𝕥𝕒𝕝𝕔𝕞𝕕: ${mariafeature()}
-│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://gg.gg/Maria-support
+│⋊ 𝕆𝕗𝕗𝕚𝕔𝕚𝕒𝕝 𝔾𝕣𝕠𝕦𝕡: https://facebook.com/eksubot
 ╰────────────┈平和
- 🎀𝐅𝐨𝐥𝐥𝐨𝐰 𝐨𝐧: https://www.instagram.com/ayushpandeyy_023
+ 🎀𝐅𝐨𝐥𝐥𝐨𝐰 𝐨𝐧: https://www.instagram.com/eksubot
 
 Here's the list of my Commands.🔖
 ${readmore}
